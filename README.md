@@ -55,3 +55,17 @@ Example URL for cover images: https://covers.openlibrary.org/b/id/OLID-L.jpg (re
     This will typically start the app at `http://localhost:3000`.
 
 ## Project Structure
+free-books-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── BookList.js
+│   │   ├── BookDetails.js
+│   │   └── Search.js (Optional)
+│   ├── App.js
+│   ├── index.js
+│   ├── ... other files
+├── .gitignore
+├── package.json
+├── README.md
+└── ... other configuration files
