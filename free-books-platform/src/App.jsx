@@ -1,18 +1,15 @@
-import "./App.css";
-import BookCard from "./components/BookCard";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import BookDetails from "./components/BookDetails";
+
 function App() {
   return (
-    <div>
-      <h1>Free Books Platform</h1>
-      <BookCard
-        book={{
-          title: "Book 1",
-          author: "Author 1",
-          description: "Description 1",
-          image:
-            "https://www.designforwriters.com/wp-content/uploads/2017/10/design-for-writers-book-cover-tf-2-a-million-to-one.jpg",
-        }}
-      />
+    <div className="p-4">
+      <h1 className="text-3xl font-bold text-center mb-6">📚 Free Books Platform</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/book/:olid" element={<BookDetails />} />
+      </Routes>
     </div>
   );
 }
